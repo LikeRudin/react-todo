@@ -70,3 +70,35 @@ then this is automatically renderedn as
 The key prop is required when rendering a list of elements in React.
  It serves as a unique identifier for each element in the list.
 ```
+
+# 2. Clock
+
+made Clock by using useState and useEffect
+
+i seperate date and time
+
+### why use useEffect?
+
+1. setInterval must runned once
+
+2. i want to make logic getting date to be runned at first rendering only
+
+Error
+
+```
+getDay().padStart(2, "0")
+
+padStart is not a function
+```
+
+i must convert return value of methods in Date
+
+like
+
+```
+String(now.getDay()).padStart(2, "0")
+
+or
+
+now.getDay().toString.padStart(2, "0")
+```
