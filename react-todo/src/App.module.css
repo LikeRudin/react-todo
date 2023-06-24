@@ -7,3 +7,12 @@
     justify-content: flex-start;
 
 }
+
+button {
+    width: 10%;
+    height: 7%;
+    border-radius: 20px;
+    font-size: large;
+    position: absolute;
+    bottom: 10%;
+}

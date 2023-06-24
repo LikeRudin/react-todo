@@ -1,6 +1,7 @@
 import React from 'react';
 import Todo from './Todo';
 import Clock from './Clock';
+import Weather from './Weather';
 import styles from './App.module.css';
 
 function App() {
@@ -31,8 +32,11 @@ function App() {
 
   return (
     <div className={styles.App} style={{background:`${color}`,}}>
-      <button onClick={onClick}>change back</button>
-      <Clock/>
+      <button onClick={onClick}>change background Color</button>
+      <div>
+        <Clock/>
+        <Weather/>
+      </div>
       <Todo/>
     </div>
   );

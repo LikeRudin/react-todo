@@ -1,5 +1,5 @@
 import React from "react";
-
+import styles from "./Todo.module.css";
 
 const Todo = () => {
     const [todoList, setTodoList] = React.useState([]);
@@ -16,14 +16,13 @@ const Todo = () => {
     
 
     return(
-        <div>
+        <div className={styles.Todo}>
             <ul id="todoList">
             {todoList.length > 0 && todoList.map((item, index) => (<li key={index}>{item}</li> ))}
 
             </ul>
             <form onSubmit={handleSubmit}>
                 <input placeholder="what is your todo today?"/>
-                <button type="submit">submit</button>
             </form>
         </div>
     );
