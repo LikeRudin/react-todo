@@ -1,5 +1,5 @@
 import React from "react";
-
+import styles from "./Clock.module.css";
 
 const Clock = () => {
     const [time, setTime] = React.useState("00:00:00");
@@ -26,7 +26,7 @@ const Clock = () => {
 
 
     return (
-        <div>
+        <div className={styles.Clock}>
             <div id="date"> {date} </div>
             <div id="time"> {time} </div>
         </div>

@@ -102,3 +102,17 @@ or
 
 now.getDay().toString.padStart(2, "0")
 ```
+
+# 3. background
+
+i don want to upload background-image files.
+
+so i used `background: linear-gradient(deg, rgba(), rgba() %)`
+
+Notice
+
+```
+there is no ',' after second rgba()
+
+(deg, rgba(), rgba() %)
+```

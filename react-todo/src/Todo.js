@@ -11,6 +11,7 @@ const Todo = () => {
         {
             setTodoList( list=> [...list, event.target[0].value])
         }
+        event.target[0].value="";
     };
     
 
